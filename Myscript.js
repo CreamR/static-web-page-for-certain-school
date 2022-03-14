@@ -12,3 +12,5 @@ window.addEventListener('DOMContentLoaded', function () {
     console.log(date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDay() + ' ' + date.getHours() + ':' + date.getMinutes() + '   解决了部分bug, 新增了部分bug(轮播图有一些bug), 目前已有解决方案但需要另添加新的插件, 对本项目二次开发时将利用新插件实现更流畅的滑动操作并解决轮播图左右按钮不匹配的bug, 增加了学校要闻部分并进行排版与适配移动端iPhoneXR, 对标签li进行了弹性布局, 优化了浏览器性能.');
     console.log(date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDay() + ' ' + date.getHours() + ':' + date.getMinutes() + '   改变了banner区域的字体深度与内间距, 使得字体变小边框增大, 更适合官网的风格, 解决了一些bug, 增加了移动端手风琴的组件, lorem填充是前端在未知数据且未与数据库发生数据交互的时候使用的默认填充字样.');
 });
+
+//there just a test!
