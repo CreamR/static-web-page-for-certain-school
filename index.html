@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/icon.jpg" type="image/x-icon">
+    <title>阿呆昭项目作业</title>
+
+    <link rel="stylesheet" href="./bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <script src="./bootstrap-5.1.3-dist/js/bootstrap.min.js" type="module"></script>
+
+    <link rel="stylesheet" href="./MyCSS.css">
+</head>
+
+<body>
+    <header class="container">
+        <img src="./img/logo.JPG" alt="logo" title="齐齐哈尔工程学院" class="logo">
+
+        <input type="text">
+
+        <p>
+            <a href="#">新生报到</a> |
+            <a href="#">腾讯微博</a> |
+            <a href="#">新浪微博</a>
+        </p>
+
+        <div class="moblie">
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                了解更多
+            </button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">阿呆昭作业</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            这是我的第一个项目作业, 我正在尝试使用Bootstrap框架进行开发.
+                            此页面使用响应式开发, 目前移动端仅适配iphoneXR以及电脑端页面,与iPhoneXR尺寸相差甚远的手机屏幕显示可能出现错误.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+                            <button type="button" class="btn btn-primary">保存更改</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="total">
+            <div class="container">
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnradio1"><a href="./index.html">首页</a></label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnradio1">学校概况</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnradio2">院系设置</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnradio3">党建思政</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnradio3">教育教学</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnradio3">招生就业</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnradio3">校内办公</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnradio3">校务公开</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnradio3">首富专栏</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnradio3">投诉专线</label>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div id="carouselExampleCaptions" class="carousel slide bigCarousel" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/outlooka.jpg" class="d-block w-100" alt="齐齐哈尔工程学院" title="齐齐哈尔工程学院">
+                    <!-- <div class="carousel-caption d-none d-md-block">
+                        <h5>图书馆</h5>
+                        <p>坐落在超大城市齐齐哈尔</p>
+                    </div> -->
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/outlookb.jpg" class="d-block w-100" alt="齐齐哈尔工程学院" title="齐齐哈尔工程学院">
+                    <!-- <div class="carousel-caption d-none d-md-block">
+                        <h5>学党史</h5>
+                        <p>齐齐哈尔最大的民办学院</p>
+                    </div> -->
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/outlookc.jpg" class="d-block w-100" alt="齐齐哈尔工程学院" title="齐齐哈尔工程学院">
+                    <!-- <div class="carousel-caption d-none d-md-block">
+                        <h5>易湖</h5>
+                        <p>远比清华园壮观的奇湖</p>
+                    </div> -->
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="container news">
+
+            <h3 class="d-inline-block">- 学校要闻</h3>
+            <a href="#" class="more">了解更多</a>
+            <hr>
+
+            <div id="carouselExampleCaptions" class="carousel slide smCarousel" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/imga.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>学校召开2021年度案例交流大会</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/imgb.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>学校开展新学期专业负责人说课考核活动</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/imgc.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>齐重数控孙伟总经理一行来校考察洽谈合作</h5>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/imgd.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>学校教师在高水平应用型大学建设新年论坛</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/imge.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>学校开展第十届应用型特色课程交流会</h5>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <div class="right">
+                <ul>
+                    <li>
+                        <div class="date">
+                            <h3>26</h3>
+                            <span>2022/2</span>
+                        </div>
+
+                        <a href="#" style="text-decoration: none;">
+                            <div class="text">
+                                <h5>学校召开春季学期疫情防控工作会议</h5>
+                                <p>压实防控主体责任, 落实第一责任人; 认真做好开学准备工作, 防疫物资要提前储备; 做好开学后的安全教育与防控工作, 上好开学第一课.</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <div class="date">
+                            <h3>26</h3>
+                            <span>2022/2</span>
+
+                        </div>
+                        <a href="#" style="text-decoration: none;">
+                            <div class="text">
+                                <h5>学校开展新学期专业负责人说课考核活动</h5>
+                                <p>我们要充分认识到人才培养方案是教育的核心和根本, 所有的教育教学活动都要围绕人才培养方案展开.</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <div class="date">
+                            <h3>26</h3>
+                            <span>2022/2</span>
+
+                        </div>
+                        <a href="#" style="text-decoration: none;">
+                            <div class="text">
+                                <h5>齐重数控孙伟总经理一行来校考察洽谈合作</h5>
+                                <p>校企双方一定能够共享优质资源, 推动深度合作, 形成发展合力, 推动学校和企业共同发展.</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <div class="date">
+                            <h3>26</h3>
+                            <span>2022/2</span>
+
+                        </div>
+                        <a href="#" style="text-decoration: none;">
+                            <div class="text">
+                                <h5>学校干部在春节期间开展课程建设线上大讨论</h5>
+                                <p>理事长充分肯定全体干部在此次研讨中的智慧贡献, 希望秉持群众路线, 共同为学校跨越式发展提供精神动力和智力支持.</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 装饰图部分 -->
+        <div id="swrap">
+            <div class="container">
+                <img src="./img/tinyNothinga.jpg" alt="tiny" title="tiny">
+                <img src="./img/tinyNothingb.jpg" alt="tiny" title="tiny">
+                <img src="./img/tinyNothingc.jpg" alt="tiny" title="tiny">
+            </div>
+        </div>
+
+        <!-- 移动端独有 -->
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        齐齐哈尔工程学院招聘公告
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, omnis laudantium, in, tempora
+                            modi assumenda esse voluptas ipsam odio deserunt facilis. Dolorem laborum facilis tenetur
+                            earum exercitationem totam! Esse, ipsa?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        北区校园经营项目招商公告
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, quia excepturi est fugit
+                            illum eos eius odio dicta nesciunt dignissimos at facere inventore cum sint ipsa asperiores
+                            odit amet corrupti!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        园林建筑模型项目招标公告
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molestias quae at
+                            necessitatibus sunt iste doloremque eveniet ipsa praesentium? Culpa repellendus inventore
+                            nesciunt ut deleniti aspernatur numquam distinctio officia ipsam!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="box1">
+                <h4>计科202</h4>
+                <h4>高明昭</h4>
+            </div>
+
+            <div class="box2">
+                <p>齐齐哈尔工程学院 地址: 齐齐哈尔市南苑高新技术产业开发区喜庆路1号</p>
+                <p>电话: 0452-6186020/6186022 邮编: 161005</p>
+                <p>ICP备案号: 黑ICP备05000011</p>
+            </div>
+
+            <div class="box3">
+                <img src="./img/footerQRcode.jpg" alt="公安局" title="北京市公安局">
+            </div>
+        </div>
+    </footer>
+
+    <script src="./Myscript.js" type="module"></script>
+</body>
+
+</html>

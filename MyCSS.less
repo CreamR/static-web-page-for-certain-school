@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    font-style: normal;
+    text-overflow: ellipsis;
+}
+
+//清除浮动
+.clearFix::after {
+    content: '';
+    display: block;
+
+    clear: both;
+    overflow: hidden;
+    height: 0;
+}
+
+//响应式移动端适配
+@media (max-width: 675px) {
+   header {
+        .moblie {
+            display: block !important;
+            float: right;
+
+            margin-top: 40px;
+        }
+
+        input {
+            display: none;
+        }
+
+        .logo {
+            margin: 0 auto;
+            align-items: center;
+        }
+   }
+
+   section {
+       .total {
+           display: none;
+       }
+
+       .news {
+           .smCarousel {
+               width: 100%;
+               height: 100%;
+           }
+
+           .right {
+               margin-top: 333px;
+               width: 106%;
+               li {
+                  .text {
+                      overflow: hidden;
+                      h5 {
+                        font-size: medium;
+                      }
+                      p {
+                          word-wrap: break-word;
+                          width: 322px;
+                      }
+                  }
+               }
+           }
+       }
+       #swrap {
+           .container {
+               img {
+                   display: none;
+               }
+            }
+        }
+
+        .accordion {
+            display: block !important;
+            margin-top: 555px;
+        }
+    }
+}
+
+//PC端适配
+header {
+    position: relative;
+    
+    .logo {
+            margin-top: 18px;
+            margin-bottom: 18px;
+            width: 288px;
+            height: 88px;
+
+            cursor: pointer;
+    }
+    input {
+        float: right;
+        margin-top: 66px;
+        text-overflow: ellipsis;
+
+        border: none;
+        border-bottom: 1px solid;
+        border-bottom-color: darkgray;
+
+        background-image: url(./img/search.svg);
+        cursor: pointer;
+        background-position: 148px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    p {
+        position: absolute;
+        top: 8px;
+        right: 11px;
+        float: right;
+        
+        a {
+            color: darkolivegreen !important;
+            text-decoration: none !important;
+        }
+    }
+    .moblie {
+        display: none;
+    }
+}
+
+section {
+    .total {
+        background-color: #014e7d;
+
+        .container {
+
+            label {
+                font-size: 18px;
+                font-weight: 300;
+                line-height: 55px;
+                color: white;
+
+                padding: 5px 30px;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .news {
+        position: relative;
+
+        .more {
+            float: right;
+            
+            font-weight: 400; 
+            color: darkgray; 
+            text-decoration: none;
+        }
+
+        .right {
+            position: absolute;
+            right: 1px;
+            top: 66px;
+    
+            li {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 11px;
+                margin-bottom: 22px;
+
+                .date {
+                    margin-right: 11px;
+                    padding-right: 11px;
+                    text-align: center;
+                    border-right: 1px solid;
+                    border-color: darkgray;
+
+                    h3 {
+                        color: skyblue;
+
+                    }
+
+                    span {
+                        color:gray;
+                    }
+                }
+    
+                .text {
+                    width: 555px;
+                    h5 {
+                        font-weight: 400;
+                        color: black;
+                    }
+    
+                    p {
+                        word-wrap: break-word;
+                        font-weight: normal;
+                        color: darkgray;
+                        overflow: hidden;
+
+                        font-size: 16px;
+                    }
+                }
+                &:hover {
+                    .text {
+                        h5 {
+                            color: #014e7d;
+                        }
+                        p {
+                            color: #014e7d;
+                        }
+                    }
+                }
+
+                &:nth-last-child(0) {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .bigCarousel {
+        margin-bottom: 66px;
+    }
+
+    .smCarousel {
+        width: 666px;
+        height: 444px;
+
+        h5 {
+            font-weight: 800;
+        }
+    }
+
+    #swrap {
+        background-color: #f5f5f5;
+        margin-top: 44px;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            img {
+                padding: 1px;
+                margin: 1px;
+
+                margin-bottom: 55px;
+
+                transition: all .3s ease;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    .accordion {
+        // 手风琴仅在移动端存在哦
+        display: none;
+    }
+}
+
+footer {
+    background-color: #014e7d;
+    height: 222px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .box1 {
+            margin-top: 48px;
+
+            text-align: center;
+
+        }
+
+        .box2 {
+            margin-top: 48px;
+
+            text-align: center;
+        
+        }
+
+        .box3 {
+            margin-top: 48px;
+
+            text-align: center;
+        }
+
+    }
+}
