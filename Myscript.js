@@ -7,6 +7,7 @@ window.addEventListener('DOMContentLoaded', function () {
         if (false)
             throw new Error('just a test for throw function!');
     });
+    //AIOSHDLA
 
     //获取构造函数以确定实时日期
     let date = new Date();
