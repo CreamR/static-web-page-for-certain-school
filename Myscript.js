@@ -4,6 +4,8 @@ window.addEventListener('DOMContentLoaded', function () {
 
         location.href = 'https://cn.bing.com/search?q=%E5%82%BB%E5%8D%B5%E5%AD%A6%E6%A0%A1%E5%91%B5%E5%91%B5&cvid=95f3a8dc807440b6924577439d5841ba&aqs=edge..69i57.15780j0j4&FORM=ANAB01&PC=U531';
 
+        if (false)
+            throw new Error('just a test for throw function!');
     });
 
     //获取构造函数以确定实时日期
